@@ -1,0 +1,9 @@
+"DemographicCategory","DemographicCategoryType","OrgName","SchoolYear","MaxTeacherCount","MaxTeacherPercent","MaxTeacherTotalCount"
+"Pacific Islander","RaceEthnicity","Washington State","2020-21",192,0.3,68625
+"Indigenous","RaceEthnicity","Washington State","2020-21",491,0.7,68625
+"Not Provided","RaceEthnicity","Washington State","2020-21",615,0.9,68625
+"Black","RaceEthnicity","Washington State","2020-21",1048,1.5,68625
+"Multiracial","RaceEthnicity","Washington State","2020-21",1232,1.8,68625
+"Asian","RaceEthnicity","Washington State","2020-21",2077,3,68625
+"Latinx","RaceEthnicity","Washington State","2020-21",3384,4.9,68625
+"White","RaceEthnicity","Washington State","2020-21",59586,86.8,68625

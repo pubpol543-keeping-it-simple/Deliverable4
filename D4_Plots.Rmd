@@ -1,0 +1,123 @@
+---
+title: "Deliverable 4 Plots"
+author: "Cinthia Illan Vazquez and Devon Lombard-Henley"
+output: 
+  html_document:
+    df_print: paged
+date: "2023-03-01"
+---
+```{r}
+#load libraries
+library(tidyverse)
+library(scales)
+```
+
+
+```{r plot-EducatorDemographics, message=FALSE, warning=FALSE}
+#clean memory
+rm(list = ls()) 
+
+#load data
+D1data=read.csv("D1_Data.csv")
+
+#create base plot
+base = ggplot(data = D1data, 
+             aes(x = `DemographicCategory`,
+                 y = `MaxTeacherCount`)) 
+
+#plot formatting
+titleText='Washington Educators Are Overwhelmingly White'
+
+sourceText='Source: Washington Office of Superindentent of Public Instruction 2020-2021 School Year (self reported data)'
+
+D1data=D1data[order(D1data$`MaxTeacherCount`),]
+
+DemographicCategoryOrd <- as.factor(D1data[order(D1data$`MaxTeacherCount`),]$`DemographicCategory`)
+
+#create final plot
+D1Plot = base + geom_bar(fill ="#b4cde3",
+                        stat = 'identity') + 
+  theme(axis.text.x=element_text(angle = 45, hjust = 1), 
+        plot.background = element_rect(fill='white', colour = 'white'), 
+        panel.background = element_rect(fill='white', colour = 'white'), 
+        plot.caption = element_text(hjust = 0), 
+        plot.title = element_text(hjust = 0.5)) + 
+  labs(title=titleText,
+                     x ='Race and Ethnicity', 
+                     y = 'Educator Count',
+                     caption = sourceText) + 
+  scale_y_continuous(breaks=c(0,10000,20000,30000,40000,50000,60000),limits = c(0, 65000), 
+                                   labels=unit_format(suffix = '', big.mark = ',')) + 
+  scale_x_discrete(limits=DemographicCategoryOrd) + 
+  geom_text(vjust=0, size = 3, aes(y = `MaxTeacherCount`, label = paste0(round(MaxTeacherPercent,2),'%')))
+
+D1Plot
+```
+
+```{r save-EducatorDemographics, echo=FALSE}
+#save plot
+saveRDS(D1Plot, file = "D1Plot.rds")
+```
+
+```{r plot-StudentEducatorDemographics, message=FALSE, warning=FALSE}
+# clean memory
+rm(list = ls()) 
+
+#load data
+D2data=read.csv("D2_Data.csv")
+
+#create base plot
+base = ggplot(D2data, aes(x=Percent, y=reorder(RaceEthnicity, Percent),))
+
+#plot formatting
+titleText = 'Students Are Far More Diverse Than Educators In Washington'
+
+sourceText = 'Source: Washington Office of Superindentent of Public Instruction 2020-2021 School Year (self reported data)'
+
+#create final plot
+D2Plot = base +
+  theme_minimal() + theme(panel.spacing = unit(2, "lines"), plot.caption = element_text(hjust = 0), 
+                      plot.title = element_text(hjust = 0.5)) +
+  geom_bar(stat = "identity") + facet_grid(~Role) + 
+  geom_text(size=3,aes(label=100*round(Percent,3)),nudge_x=0.05) + 
+  scale_x_continuous(labels=percent_format(accuracy=1,suffix="")) + 
+  labs(title = titleText,x='Percentage of Educators and Students in Washington Public Schools (%)',
+       y='Race and Ethnicity',caption = sourceText)
+  
+D2Plot
+```
+
+```{r save-StudentEducatorDemographics, echo=FALSE}
+#save plot
+saveRDS(D2Plot, file = "D2Plot.rds")
+```
+
+```{r plot-DemographicMap, message=FALSE, warning=FALSE}
+# clean memory
+rm(list = ls()) 
+
+#load data
+D3data=read.csv("D3_Data.csv")
+
+#load map
+
+
+#merge map & data
+
+
+#create base plot
+
+
+#plot formatting
+
+
+#create final plot
+
+
+
+```
+
+```{r save-DemographicMap, echo=FALSE}
+#save plot
+saveRDS(D3Map, file = "D3Map.rds")
+```

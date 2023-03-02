@@ -1,0 +1,259 @@
+County,DemographicCategory,TeacherCount,TotalTeacherCount,TeacherPct,COUNTYFP,FIPS
+Adams,Indigenous,1,374,0.0027,1,53001
+Adams,Asian,1,374,0.0027,1,53001
+Adams,Latinx,85,374,0.2273,1,53001
+Adams,Not Provided,4,374,0.0107,1,53001
+Adams,Multiracial,3,374,0.008,1,53001
+Adams,White,280,374,0.7487,1,53001
+Asotin,Indigenous,1,185,0.0054,3,53003
+Asotin,Latinx,1,185,0.0054,3,53003
+Asotin,Pacific Islander,1,185,0.0054,3,53003
+Asotin,White,182,185,0.9838,3,53003
+Benton,Indigenous,15,2248,0.0067,5,53005
+Benton,Asian,25,2248,0.0111,5,53005
+Benton,Black,14,2248,0.0062,5,53005
+Benton,Latinx,191,2248,0.085,5,53005
+Benton,Not Provided,19,2248,0.0085,5,53005
+Benton,Multiracial,21,2248,0.0093,5,53005
+Benton,White,1963,2248,0.8732,5,53005
+Chelan,Indigenous,5,879,0.0057,7,53007
+Chelan,Asian,3,879,0.0034,7,53007
+Chelan,Latinx,84,879,0.0956,7,53007
+Chelan,Not Provided,1,879,0.0011,7,53007
+Chelan,Multiracial,10,879,0.0114,7,53007
+Chelan,White,776,879,0.8828,7,53007
+Clallam,Indigenous,17,732,0.0232,9,53009
+Clallam,Asian,8,732,0.0109,9,53009
+Clallam,Black,4,732,0.0055,9,53009
+Clallam,Latinx,19,732,0.026,9,53009
+Clallam,Pacific Islander,1,732,0.0014,9,53009
+Clallam,Not Provided,18,732,0.0246,9,53009
+Clallam,Multiracial,13,732,0.0178,9,53009
+Clallam,White,652,732,0.8907,9,53009
+Clark,Indigenous,16,4932,0.0032,11,53011
+Clark,Asian,105,4932,0.0213,11,53011
+Clark,Black,44,4932,0.0089,11,53011
+Clark,Latinx,203,4932,0.0412,11,53011
+Clark,Pacific Islander,7,4932,0.0014,11,53011
+Clark,Not Provided,64,4932,0.013,11,53011
+Clark,Multiracial,79,4932,0.016,11,53011
+Clark,White,4414,4932,0.895,11,53011
+Columbia,Black,1,37,0.027,13,53013
+Columbia,Multiracial,1,37,0.027,13,53013
+Columbia,White,35,37,0.9459,13,53013
+Cowlitz,Indigenous,8,1038,0.0077,15,53015
+Cowlitz,Asian,8,1038,0.0077,15,53015
+Cowlitz,Black,6,1038,0.0058,15,53015
+Cowlitz,Latinx,28,1038,0.027,15,53015
+Cowlitz,Pacific Islander,4,1038,0.0039,15,53015
+Cowlitz,Not Provided,4,1038,0.0039,15,53015
+Cowlitz,Multiracial,10,1038,0.0096,15,53015
+Cowlitz,White,970,1038,0.9345,15,53015
+Douglas,Indigenous,4,446,0.009,17,53017
+Douglas,Asian,3,446,0.0067,17,53017
+Douglas,Black,2,446,0.0045,17,53017
+Douglas,Latinx,25,446,0.0561,17,53017
+Douglas,Not Provided,2,446,0.0045,17,53017
+Douglas,Multiracial,2,446,0.0045,17,53017
+Douglas,White,408,446,0.9148,17,53017
+Ferry,Indigenous,2,70,0.0286,19,53019
+Ferry,Black,1,70,0.0143,19,53019
+Ferry,Latinx,2,70,0.0286,19,53019
+Ferry,Pacific Islander,1,70,0.0143,19,53019
+Ferry,Multiracial,2,70,0.0286,19,53019
+Ferry,White,62,70,0.8857,19,53019
+Franklin,Indigenous,9,1357,0.0066,21,53021
+Franklin,Asian,15,1357,0.0111,21,53021
+Franklin,Black,15,1357,0.0111,21,53021
+Franklin,Latinx,37,1357,0.0273,21,53021
+Franklin,Not Provided,11,1357,0.0081,21,53021
+Franklin,Multiracial,2,1357,0.0015,21,53021
+Franklin,White,1268,1357,0.9344,21,53021
+Garfield,White,22,22,1,23,53023
+Grant,Indigenous,5,1270,0.0039,25,53025
+Grant,Asian,16,1270,0.0126,25,53025
+Grant,Black,5,1270,0.0039,25,53025
+Grant,Latinx,128,1270,0.1008,25,53025
+Grant,Pacific Islander,4,1270,0.0031,25,53025
+Grant,Not Provided,4,1270,0.0031,25,53025
+Grant,Multiracial,8,1270,0.0063,25,53025
+Grant,White,1100,1270,0.8661,25,53025
+Grays Harbor,Indigenous,15,747,0.0201,27,53027
+Grays Harbor,Asian,3,747,0.004,27,53027
+Grays Harbor,Black,5,747,0.0067,27,53027
+Grays Harbor,Latinx,22,747,0.0295,27,53027
+Grays Harbor,Pacific Islander,1,747,0.0013,27,53027
+Grays Harbor,Not Provided,43,747,0.0576,27,53027
+Grays Harbor,Multiracial,18,747,0.0241,27,53027
+Grays Harbor,White,640,747,0.8568,27,53027
+Island,Asian,9,553,0.0163,29,53029
+Island,Black,9,553,0.0163,29,53029
+Island,Latinx,13,553,0.0235,29,53029
+Island,Pacific Islander,3,553,0.0054,29,53029
+Island,Not Provided,9,553,0.0163,29,53029
+Island,Multiracial,4,553,0.0072,29,53029
+Island,White,506,553,0.915,29,53029
+Jefferson,Indigenous,2,186,0.0108,31,53031
+Jefferson,Asian,1,186,0.0054,31,53031
+Jefferson,Latinx,4,186,0.0215,31,53031
+Jefferson,Not Provided,2,186,0.0108,31,53031
+Jefferson,Multiracial,3,186,0.0161,31,53031
+Jefferson,White,174,186,0.9355,31,53031
+King,Indigenous,87,18626,0.0047,33,53033
+King,Asian,1176,18626,0.0631,33,53033
+King,Black,529,18626,0.0284,33,53033
+King,Latinx,821,18626,0.0441,33,53033
+King,Pacific Islander,72,18626,0.0039,33,53033
+King,Not Provided,199,18626,0.0107,33,53033
+King,Multiracial,489,18626,0.0263,33,53033
+King,White,15253,18626,0.8189,33,53033
+Kitsap,Indigenous,17,2364,0.0072,35,53035
+Kitsap,Asian,42,2364,0.0178,35,53035
+Kitsap,Black,23,2364,0.0097,35,53035
+Kitsap,Latinx,73,2364,0.0309,35,53035
+Kitsap,Pacific Islander,6,2364,0.0025,35,53035
+Kitsap,Not Provided,68,2364,0.0288,35,53035
+Kitsap,Multiracial,50,2364,0.0212,35,53035
+Kitsap,White,2085,2364,0.882,35,53035
+Kittitas,Indigenous,4,387,0.0103,37,53037
+Kittitas,Asian,4,387,0.0103,37,53037
+Kittitas,Latinx,10,387,0.0258,37,53037
+Kittitas,Not Provided,7,387,0.0181,37,53037
+Kittitas,Multiracial,6,387,0.0155,37,53037
+Kittitas,White,356,387,0.9199,37,53037
+Klickitat,Indigenous,2,348,0.0057,39,53039
+Klickitat,Black,1,348,0.0029,39,53039
+Klickitat,Latinx,8,348,0.023,39,53039
+Klickitat,Not Provided,2,348,0.0057,39,53039
+Klickitat,Multiracial,2,348,0.0057,39,53039
+Klickitat,White,333,348,0.9569,39,53039
+Lewis,Indigenous,7,768,0.0091,41,53041
+Lewis,Asian,1,768,0.0013,41,53041
+Lewis,Black,3,768,0.0039,41,53041
+Lewis,Latinx,16,768,0.0208,41,53041
+Lewis,Pacific Islander,1,768,0.0013,41,53041
+Lewis,Not Provided,6,768,0.0078,41,53041
+Lewis,Multiracial,8,768,0.0104,41,53041
+Lewis,White,726,768,0.9453,41,53041
+Lincoln,Indigenous,1,197,0.0051,43,53043
+Lincoln,Asian,1,197,0.0051,43,53043
+Lincoln,Black,1,197,0.0051,43,53043
+Lincoln,Latinx,1,197,0.0051,43,53043
+Lincoln,Pacific Islander,4,197,0.0203,43,53043
+Lincoln,Not Provided,6,197,0.0305,43,53043
+Lincoln,Multiracial,2,197,0.0102,43,53043
+Lincoln,White,181,197,0.9188,43,53043
+Mason,Indigenous,2,701,0.0029,45,53045
+Mason,Asian,3,701,0.0043,45,53045
+Mason,Black,5,701,0.0071,45,53045
+Mason,Latinx,37,701,0.0528,45,53045
+Mason,Not Provided,25,701,0.0357,45,53045
+Mason,Multiracial,9,701,0.0128,45,53045
+Mason,White,620,701,0.8845,45,53045
+Okanogan,Indigenous,15,620,0.0242,47,53047
+Okanogan,Asian,7,620,0.0113,47,53047
+Okanogan,Black,3,620,0.0048,47,53047
+Okanogan,Latinx,32,620,0.0516,47,53047
+Okanogan,Pacific Islander,1,620,0.0016,47,53047
+Okanogan,Multiracial,2,620,0.0032,47,53047
+Okanogan,White,560,620,0.9032,47,53047
+Pacific,Indigenous,2,230,0.0087,49,53049
+Pacific,Asian,2,230,0.0087,49,53049
+Pacific,Black,1,230,0.0043,49,53049
+Pacific,Latinx,9,230,0.0391,49,53049
+Pacific,Not Provided,14,230,0.0609,49,53049
+Pacific,Multiracial,2,230,0.0087,49,53049
+Pacific,White,200,230,0.8696,49,53049
+Pend Oreille,Indigenous,2,120,0.0167,51,53051
+Pend Oreille,Latinx,1,120,0.0083,51,53051
+Pend Oreille,Multiracial,2,120,0.0167,51,53051
+Pend Oreille,White,115,120,0.9583,51,53051
+Pierce,Indigenous,53,8134,0.0065,53,53053
+Pierce,Asian,252,8134,0.031,53,53053
+Pierce,Black,222,8134,0.0273,53,53053
+Pierce,Latinx,355,8134,0.0436,53,53053
+Pierce,Pacific Islander,29,8134,0.0036,53,53053
+Pierce,Not Provided,66,8134,0.0081,53,53053
+Pierce,Multiracial,230,8134,0.0283,53,53053
+Pierce,White,6927,8134,0.8516,53,53053
+San Juan,Asian,1,160,0.0063,55,53055
+San Juan,Latinx,1,160,0.0063,55,53055
+San Juan,Pacific Islander,1,160,0.0063,55,53055
+San Juan,Not Provided,13,160,0.0813,55,53055
+San Juan,Multiracial,2,160,0.0125,55,53055
+San Juan,White,142,160,0.8875,55,53055
+Skagit,Indigenous,8,1260,0.0063,57,53057
+Skagit,Asian,13,1260,0.0103,57,53057
+Skagit,Black,4,1260,0.0032,57,53057
+Skagit,Latinx,75,1260,0.0595,57,53057
+Skagit,Pacific Islander,2,1260,0.0016,57,53057
+Skagit,Not Provided,8,1260,0.0063,57,53057
+Skagit,Multiracial,7,1260,0.0056,57,53057
+Skagit,White,1143,1260,0.9071,57,53057
+Skamania,Indigenous,1,81,0.0123,59,53059
+Skamania,Asian,1,81,0.0123,59,53059
+Skamania,White,79,81,0.9753,59,53059
+Snohomish,Indigenous,52,6776,0.0077,61,53061
+Snohomish,Asian,226,6776,0.0334,61,53061
+Snohomish,Black,70,6776,0.0103,61,53061
+Snohomish,Latinx,143,6776,0.0211,61,53061
+Snohomish,Pacific Islander,20,6776,0.003,61,53061
+Snohomish,Not Provided,47,6776,0.0069,61,53061
+Snohomish,Multiracial,104,6776,0.0153,61,53061
+Snohomish,White,6114,6776,0.9023,61,53061
+Spokane,Indigenous,27,4943,0.0055,63,53063
+Spokane,Asian,48,4943,0.0097,63,53063
+Spokane,Black,33,4943,0.0067,63,53063
+Spokane,Latinx,59,4943,0.0119,63,53063
+Spokane,Pacific Islander,6,4943,0.0012,63,53063
+Spokane,Not Provided,41,4943,0.0083,63,53063
+Spokane,Multiracial,47,4943,0.0095,63,53063
+Spokane,White,4682,4943,0.9472,63,53063
+Stevens,Indigenous,6,392,0.0153,65,53065
+Stevens,Asian,3,392,0.0077,65,53065
+Stevens,Black,1,392,0.0026,65,53065
+Stevens,Latinx,7,392,0.0179,65,53065
+Stevens,Not Provided,1,392,0.0026,65,53065
+Stevens,Multiracial,3,392,0.0077,65,53065
+Stevens,White,371,392,0.9464,65,53065
+Thurston,Indigenous,17,2607,0.0065,67,53067
+Thurston,Asian,59,2607,0.0226,67,53067
+Thurston,Black,22,2607,0.0084,67,53067
+Thurston,Latinx,79,2607,0.0303,67,53067
+Thurston,Pacific Islander,11,2607,0.0042,67,53067
+Thurston,Not Provided,30,2607,0.0115,67,53067
+Thurston,Multiracial,39,2607,0.015,67,53067
+Thurston,White,2350,2607,0.9014,67,53067
+Wahkiakum,Latinx,2,41,0.0488,69,53069
+Wahkiakum,White,39,41,0.9512,69,53069
+Walla Walla,Indigenous,1,555,0.0018,71,53071
+Walla Walla,Asian,4,555,0.0072,71,53071
+Walla Walla,Black,3,555,0.0054,71,53071
+Walla Walla,Latinx,54,555,0.0973,71,53071
+Walla Walla,Not Provided,3,555,0.0054,71,53071
+Walla Walla,Multiracial,13,555,0.0234,71,53071
+Walla Walla,White,477,555,0.8595,71,53071
+Whatcom,Indigenous,8,1872,0.0043,73,53073
+Whatcom,Asian,22,1872,0.0118,73,53073
+Whatcom,Black,6,1872,0.0032,73,53073
+Whatcom,Latinx,40,1872,0.0214,73,53073
+Whatcom,Pacific Islander,4,1872,0.0021,73,53073
+Whatcom,Not Provided,15,1872,0.008,73,53073
+Whatcom,Multiracial,21,1872,0.0112,73,53073
+Whatcom,White,1756,1872,0.938,73,53073
+Whitman,Indigenous,1,389,0.0026,75,53075
+Whitman,Asian,1,389,0.0026,75,53075
+Whitman,Black,1,389,0.0026,75,53075
+Whitman,Latinx,6,389,0.0154,75,53075
+Whitman,Pacific Islander,2,389,0.0051,75,53075
+Whitman,Not Provided,6,389,0.0154,75,53075
+Whitman,Multiracial,8,389,0.0206,75,53075
+Whitman,White,364,389,0.9357,75,53075
+Yakima,Indigenous,27,3275,0.0082,77,53077
+Yakima,Asian,30,3275,0.0092,77,53077
+Yakima,Black,25,3275,0.0076,77,53077
+Yakima,Latinx,720,3275,0.2198,77,53077
+Yakima,Pacific Islander,5,3275,0.0015,77,53077
+Yakima,Not Provided,66,3275,0.0202,77,53077
+Yakima,Multiracial,33,3275,0.0101,77,53077
+Yakima,White,2369,3275,0.7234,77,53077

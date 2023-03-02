@@ -1,0 +1,13 @@
+Demographic Category,Demographic Category Type,OrgName,SchoolYear,Max. Teacher Count,Max. Teacher Percent,Max. Teacher Total Count
+Gender X,Gender,Washington State,2020-21,6,0.0%,"68,625"
+Not Provided,Gender,Washington State,2020-21,19,0.0%,"68,625"
+Native Hawaiian/Other Pacific Islander,RaceEthnicity,Washington State,2020-21,192,0.3%,"68,625"
+American Indian/Alaskan Native,RaceEthnicity,Washington State,2020-21,491,0.7%,"68,625"
+Not Provided,RaceEthnicity,Washington State,2020-21,615,0.9%,"68,625"
+Black/African American,RaceEthnicity,Washington State,2020-21,"1,048",1.5%,"68,625"
+Two or More Races,RaceEthnicity,Washington State,2020-21,"1,232",1.8%,"68,625"
+Asian,RaceEthnicity,Washington State,2020-21,"2,077",3.0%,"68,625"
+Hispanic/Latino of any race(s),RaceEthnicity,Washington State,2020-21,"3,384",4.9%,"68,625"
+Male,Gender,Washington State,2020-21,"17,631",25.7%,"68,625"
+Female,Gender,Washington State,2020-21,"50,969",74.3%,"68,625"
+White,RaceEthnicity,Washington State,2020-21,"59,586",86.8%,"68,625"

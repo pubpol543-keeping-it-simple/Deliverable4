@@ -1,0 +1,139 @@
+---
+title: "Deliverable 4 Data"
+author: "Cinthia Illan Vazquez and Devon Lombard-Henley"
+output: 
+  html_document:
+    df_print: paged
+date: "2023-03-01"
+---
+```{r}
+#load libraries
+library(tidyverse)
+```
+
+```{r data-EducatorDemographics, message=FALSE, warning=FALSE}
+# clean memory
+rm(list = ls()) 
+
+#load data
+df1 <- read_csv("Data/D1-TeacherDemographics.csv")
+
+#clean & set up data
+str(df1,width = 70,strict.width='cut')
+
+df1$`MaxTeacherPercent` <- parse_number(df1$`MaxTeacherPercent`)
+
+head(df1$`MaxTeacherCount`,20)
+
+absoluteT=table(df1$`MaxTeacherCount`,
+                exclude = 'nothing')
+
+dfrace <- df1[df1$`DemographicCategoryType`=="RaceEthnicity",]
+
+renamevar <- function(varname){
+  case_when(varname=='Native Hawaiian/Other Pacific Islander' ~ 'Pacific Islander',
+            varname=='American Indian/Alaskan Native' ~ 'Indigenous',
+            varname=='Black/African American' ~'Black',
+            varname=='Two or More Races' ~ 'Multiracial',
+            varname=='Hispanic/Latino of any race(s)' ~ 'Latinx',
+            TRUE ~ varname)
+}
+
+dfrace$`DemographicCategory` <- sapply(dfrace$`DemographicCategory`, FUN = renamevar)
+
+#save data frame
+write.csv(dfrace,"D1_Data.csv",row.names = F)
+```
+
+```{r data-StudentEducatorDemographics, message=FALSE, warning=FALSE}
+# clean memory
+rm(list = ls()) 
+
+#load data
+df_students <- read_csv("Data/D2-StudentEnrollmentSummary.csv")
+
+df_educators <- read_csv("Data/D2-TeacherDemographicsSummary.csv")
+
+#clean & set up data
+dfrace_educators <- df_educators[df_educators$`Demographic Category Type`=="RaceEthnicity",]
+
+dfrace_students <- df_students [df_students$`Student Group Type`=="federalethracerollupcode",]
+
+dfrace_educators$Percent <- as.numeric(gsub("%","",dfrace_educators$`Max. Teacher Percent`))/100
+
+CountAllStudents <- sum(dfrace_students$`Number Of Students`)
+
+dfrace_students$Percent <- dfrace_students$`Number Of Students`/CountAllStudents
+
+#merge data frames 
+dfrace_educators$Role <-'Educator'
+dfrace_students$Role <-'Student'
+
+dfrace_educators <-dfrace_educators %>%
+  rename(
+    RaceEthnicity =`Demographic Category`,
+    Count =`Max. Teacher Count`
+  )
+
+dfrace_students <-dfrace_students %>%
+  rename(
+    RaceEthnicity =`Student Group`,
+    Count =`Number Of Students`
+  )
+
+dfrace_educators <-dfrace_educators %>%
+  select(RaceEthnicity, Count, Role, Percent)
+
+dfrace_students <-dfrace_students %>%
+  select(RaceEthnicity, Count, Role, Percent)
+
+df2 <- union_all(dfrace_educators, dfrace_students)
+
+#rename variable names
+renamevar <- function(varname){
+  case_when(varname=='Native Hawaiian/Other Pacific Islander' ~ 'Pacific Islander',
+            varname=='Native Hawaiian/ Other Pacific Islander' ~ 'Pacific Islander',
+            varname=='American Indian/Alaskan Native' ~ 'Indigenous',
+            varname=='American Indian/ Alaskan Native' ~ 'Indigenous',
+            varname=='Black/African American' ~'Black',
+            varname=='Black/ African American' ~'Black',
+            varname=='Two or More Races' ~ 'Multiracial',
+            varname=='Hispanic/Latino of any race(s)' ~ 'Latinx',
+            varname=='Hispanic/ Latino of any race(s)' ~ 'Latinx',
+            TRUE ~ varname)
+}
+
+df2$RaceEthnicity <- sapply(df2$RaceEthnicity, FUN = renamevar)
+
+#save data frame
+write.csv(df2,"D2_Data.csv",row.names = F)
+```
+
+```{r data-DemographicMap, message=FALSE, warning=FALSE}
+# clean memory
+rm(list = ls()) 
+
+#load data
+df3 <- read_csv("Data/D3-FinalData.csv")
+
+#clean & set up data
+df3 <- df3 %>% mutate(COUNTYFP = sprintf("%03d", COUNTYFP))
+
+df3$COUNTYFP = as.character(df3$COUNTYFP)
+
+df3 <- subset(df3, DemographicCategory == "White")
+
+res.pam=cluster::pam(x=df3$TeacherPct,
+                     k = 3,
+                     cluster.only = F)
+
+df3$cluster=as.factor(res.pam$clustering)
+
+df3$cluster=factor(df3$cluster, 
+                         levels=c(1,3,2), 
+                         labels=c("Low","Mid","High"), 
+                         ordered=T)
+
+#save data frame
+write.csv(df3,"D3_Data.csv",row.names = F)
+```
