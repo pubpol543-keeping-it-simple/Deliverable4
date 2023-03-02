@@ -117,9 +117,6 @@ rm(list = ls())
 df3 <- read_csv("Data/D3-FinalData.csv")
 
 #clean & set up data
-df3 <- df3 %>% mutate(COUNTYFP = sprintf("%03d", COUNTYFP))
-
-df3$COUNTYFP = as.character(df3$COUNTYFP)
 
 df3 <- subset(df3, DemographicCategory == "White")
 

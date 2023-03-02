@@ -10,6 +10,7 @@ date: "2023-03-01"
 #load libraries
 library(tidyverse)
 library(scales)
+library(sf)
 ```
 
 
@@ -100,21 +101,44 @@ rm(list = ls())
 D3data=read.csv("D3_Data.csv")
 
 #load map
+linkMap="https://raw.githubusercontent.com/pubpol543-keeping-it-simple/Deliverable4/main/Data/WA-53-washington-counties.json"
 
+mapWA = read_sf(linkMap)
 
 #merge map & data
+D3data <- D3data %>% mutate(COUNTYFP = sprintf("%03d", COUNTYFP))
 
+D3data$COUNTYFP = as.character(D3data$COUNTYFP)
 
-#create base plot
+map_indexes = merge(mapWA, D3data, by='COUNTYFP')
 
+#create base map
+baseMap= ggplot(data=mapWA) + theme_classic() + 
+         geom_sf(fill='grey', color='white')
 
 #plot formatting
+Legend_title="% of white educators \nin each county"
 
+titleText = 'High Percentages Of White Educators In Every Washington State County'
+
+sourceText = 'Source: Washington Office of Superindentent of Public Instruction 2020-2021 School Year (self reported data)'
 
 #create final plot
+D3Map = baseMap + geom_sf(data=map_indexes,aes(fill=100*TeacherPct),color=NA) + 
+  scale_fill_gradient(low = '#fddbc7',high = '#40004b',name=Legend_title) + 
+  labs(title = titleText,caption = sourceText) + 
+  theme(plot.caption = element_text(hjust = 0),
+        legend.title = element_text(hjust = 0.0, color = '#5b5b5b'),
+        plot.title= element_text(hjust = 0.0)) + 
+  theme (axis.line = element_blank(),
+          axis.text.x = element_blank(),
+          axis.text.y = element_blank(),
+          axis.ticks = element_blank(),
+          axis.title.x = element_blank(),
+          axis.title.y = element_blank()) + 
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1))
 
-
-
+D3Map
 ```
 
 ```{r save-DemographicMap, echo=FALSE}

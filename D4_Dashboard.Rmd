@@ -17,7 +17,7 @@ Column {data-width=450}
 ### Deliverable 3: Map of Educator Demographics
 
 ```{r}
-
+readRDS("D3Map.rds")
 ```
 
 Column {data-width=550}
