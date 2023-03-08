@@ -13,7 +13,7 @@ library(flexdashboard)
 Row
 -----------------------------------------------------------------------
 
-### Deliverable 3: Map of Educator Demographics
+### Washington State Map of Educator Demographics
 
 ```{r,fig.width=12, fig.height=5}
 readRDS("D3Map.rds")
@@ -22,13 +22,13 @@ readRDS("D3Map.rds")
 Row {.tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Deliverable 1: Educator Demgraphics
+### Plot of Educator Demgraphics
 
 ```{r,fig.width=12, fig.height=5}
 readRDS("D1Plot.rds")
 ```
 
-### Deliverable 2: Comparison of Student-Educator Demgraphics
+### Comparison Plot of Student-Educator Demgraphics
 
 ```{r,fig.width=12, fig.height=5}
 readRDS("D2Plot.rds")
