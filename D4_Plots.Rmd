@@ -79,7 +79,7 @@ sourceText = 'Source: Washington Office of Superindentent of Public Instruction 
 D2Plot = base +
   theme_minimal() + theme(panel.spacing = unit(2, "lines"), plot.caption = element_text(hjust = 0), 
                       plot.title = element_text(hjust = 0.5)) +
-  geom_bar(stat = "identity") + facet_grid(~Role) + 
+  geom_bar(fill ="#b4cde3", stat = "identity") + facet_grid(~Role) + 
   geom_text(size=3,aes(label=100*round(Percent,3)),nudge_x=0.05) + 
   scale_x_continuous(labels=percent_format(accuracy=1,suffix="")) + 
   labs(title = titleText,x='Percentage of Educators and Students in Washington Public Schools (%)',
@@ -114,7 +114,7 @@ map_indexes = merge(mapWA, D3data, by='COUNTYFP')
 
 #create base map
 baseMap= ggplot(data=mapWA) + theme_classic() + 
-         geom_sf(fill='grey', color='white')
+         geom_sf(fill="#b4cde3", color='white')
 
 #plot formatting
 Legend_title="% of white educators \nin each county"
